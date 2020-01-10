@@ -1,0 +1,9 @@
+version: '2'
+services: 
+  web: 
+    build: .
+    image: httpserver
+    ports: 
+      - "8085:80"
+    volumes: 
+      - ./HTML5_Javascript:/var/www/html
